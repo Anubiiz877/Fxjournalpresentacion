@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FX Journal Pro | El Diario Definitivo para el Trader</title>
+    
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyberDark: '#0d0e12',
+                        cyberCard: '#16171d',
+                        cyberGreen: '#00ffcc',
+                        cyberRed: '#ff4a4a',
+                        cyberPurple: '#646cff'
+                    },
+                    boxShadow: {
+                        'neon-green': '0 0 15px rgba(0, 255, 204, 0.3)',
+                        'neon-purple': '0 0 15px rgba(100, 108, 255, 0.2)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cyberDark text-gray-300 font-sans selection:bg-cyberGreen selection:text-black">
+
+    <nav class="border-b border-gray-800 bg-cyberDark/90 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex justify-between items-center w-full min-h-[70px]">
+        
+        <div class="flex items-center gap-3 min-w-[250px]">
+            <img src="./icon.ico" alt="FX Journal Pro Logo" class="h-9 w-9 object-contain block flex-shrink-0">
+            <span class="text-xl font-bold tracking-wider text-white block whitespace-nowrap">
+                FX 
+                <span class="text-cyberGreen font-extrabold" style="filter: drop-shadow(0 0 8px rgba(0, 255, 204, 0.8)) drop-shadow(0 0 2px rgba(0, 255, 204, 1));">
+                    Journal
+                </span> 
+                Pro
+            </span>
+        </div>
+
+        <div class="hidden md:flex gap-6 text-sm font-medium">
+            <a href="#caracteristicas" class="hover:text-cyberGreen transition">Características</a>
+            <a href="#gestion" class="hover:text-cyberGreen transition">Gestión</a>
+            <a href="#precios" class="hover:text-cyberGreen transition">Precios</a>
+            <a href="#estrategias" class="hover:text-cyberPurple transition">Estrategias</a> 
+        </div>
+
+        <div class="flex items-center">
+            <button onclick="window.location.href='https://fxjournalproapp.netlify.app/'" class="bg-cyberGreen text-black font-bold px-4 py-2 rounded-lg text-sm hover:shadow-neon-green transition-all duration-300 whitespace-nowrap cursor-pointer">
+    Acceso
+</button>
+        </div>
+
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-24 text-center">
+        <span class="text-xs font-bold tracking-widest text-cyberGreen uppercase border border-cyberGreen/30 px-3 py-1 rounded-full bg-cyberGreen/5">Trading Terminal • Online</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mt-6 tracking-tight max-w-4xl mx-auto leading-tight">
+            Domina tus Emociones y Registra tus Trades con el Diario <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyberGreen to-cyberPurple">Cyberpunk Definitivo</span>
+        </h1>
+        <p class="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">
+            Diseñado Para todo tipo de Traders. Analiza tu win rate, gestiona tu riesgo y mantén un control milimétrico de tu capital con una interfaz premium en modo Cyberpunk.
+        </p>
+        <div class="mt-10 flex justify-center gap-4">
+            <a href="#precios" class="bg-cyberGreen text-black font-bold px-8 py-4 rounded-xl hover:shadow-neon-green transition-all duration-300 text-base">Comenzar Ahora</a>
+            <a href="#caracteristicas" class="border border-gray-700 hover:border-cyberPurple text-white font-medium px-8 py-4 rounded-xl transition duration-300 text-base">Ver Características</a>
+        </div>
+
+        <div class="mt-16 border border-gray-800 rounded-2xl p-2 bg-cyberCard/50 shadow-neon-purple max-w-5xl mx-auto transition-transform hover:scale-[1.01] duration-500">
+            <div class="bg-cyberDark rounded-xl overflow-hidden border border-gray-800">
+                <img src="./Dashboard.jpg" alt="Dashboard Principal FX Journal Pro" class="w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-900">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch max-w-6xl mx-auto">
+            
+            <div class="bg-cyberCard border border-gray-800 rounded-2xl p-8 flex flex-col justify-between hover:border-gray-700 transition">
+                <div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-cyberPurple/80 block mb-2">Métricas Avanzadas</span>
+                    <h3 class="text-2xl font-bold text-white mb-3">Evolución de Capital y Curva de Equidad</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Visualiza el crecimiento de tu cuenta, tu Profit Factor y la ganancia esperada por operación de forma matemática.
+                    </p>
+                </div>
+                <div class="mt-auto overflow-hidden rounded-xl border border-gray-900 bg-black/40 p-2">
+                    <img src="./Evolución de Capital y Curva de Equidad.jpg" alt="Evolución de Capital" class="w-full h-auto object-contain block">
+                </div>
+            </div>
+
+            <div class="bg-cyberCard border border-gray-800 rounded-2xl p-8 flex flex-col justify-between hover:border-gray-700 transition">
+                <div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-cyberGreen/80 block mb-2">Optimización</span>
+                    <h3 class="text-2xl font-bold text-white mb-3">Mapa de Calor Operativo</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Descubre cuáles son tus horas más rentables del día para operar y evita sobre-operar en sesiones lentas.
+                    </p>
+                </div>
+                <div class="mt-auto overflow-hidden rounded-xl border border-gray-900 bg-black/40 p-2">
+                    <img src="./Mapa de Calor Operativo.jpg" alt="Mapa de Calor Operativo" class="w-full h-auto object-contain block">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-900">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-cyberGreen font-bold text-xs uppercase tracking-wider">Flujo de Trabajo Eficiente</span>
+                <h2 class="text-3xl font-bold text-white mt-2">Registra tus entradas en menos de 10 segundos</h2>
+                <p class="text-gray-400 mt-4 leading-relaxed">
+                    Olvídate de las tablas de Excel aburridas. Con nuestro formulario optimizado puedes registrar la dirección (Compra/Venta), el lotaje, las comisiones y capturar los gráficos de "Antes y Después" de cada setup directamente.
+                </p>
+                <ul class="mt-6 space-y-3 text-sm">
+                    <li class="flex items-center gap-2"><span class="text-cyberGreen">✔</span> Gestión de riesgo calculada automáticamente.</li>
+                    <li class="flex items-center gap-2"><span class="text-cyberGreen">✔</span> Seguimiento del estado mental y gestión emocional.</li>
+                </ul>
+            </div>
+            <div class="bg-cyberCard border border-gray-800 rounded-2xl p-2 shadow-neon-green">
+                <img src="./Flujo de Trabajo Eficiente.jpg" alt="Formulario Nuevo Trade" class="rounded-xl w-full h-auto">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-24">
+            <div class="order-2 md:order-1 bg-cyberCard border border-gray-800 rounded-2xl p-2">
+                <img src="./Historial Completo y Archivo de Trades.jpg" alt="Historial de Operaciones" class="rounded-xl w-full h-auto">
+            </div>
+            <div class="order-1 md:order-2">
+                <span class="text-cyberPurple font-bold text-xs uppercase tracking-wider">Auditoría Visual</span>
+                <h2 class="text-3xl font-bold text-white mt-2">Historial Completo y Archivo de Trades</h2>
+                <p class="text-gray-400 mt-4 leading-relaxed">
+                    Revisa cada trade ejecutado mediante una vista de tarjetas limpia y estética. Filtra por par, por mes o revisa tus anotaciones para identificar patrones repetitivos en tus pérdidas.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN: MONITOR DE MÉTRICAS MENSUALES -->
+    <section class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-900 bg-cyberDark">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            
+            <!-- Texto descriptivo (Izquierda) -->
+            <div class="space-y-6">
+                <div class="inline-block px-3 py-1 rounded-full border border-cyberGreen/30 bg-cyberGreen/5 text-xs font-bold tracking-widest text-cyberGreen uppercase">
+                    ⚡ Nueva Función
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                    Auditoría Estadística <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyberGreen to-cyberPurple" style="filter: drop-shadow(0 0 8px rgba(0, 255, 204, 0.4));">
+                        Mensual Automática
+                    </span>
+                </h2>
+                <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                    Olvídate de calcular tus métricas a mano en Excel. Con el nuevo panel integrado, seleccionas el mes y la terminal calcula al instante tu rendimiento real. Mantén el control estricto de tu plan de trading de un solo vistazo.
+                </p>
+                
+                <!-- Puntos clave -->
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-2">
+                        <span class="text-cyberGreen">✔</span>
+                        <span class="text-gray-400">Win Rate (WR) calculado en tiempo real según tus TPs y SLs.</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-cyberGreen">✔</span>
+                        <span class="text-gray-400">Profit Factor (PF) automático para medir tu eficiencia matemática.</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-cyberGreen">✔</span>
+                        <span class="text-gray-400">Contador estricto de operaciones (TP / BE / SL) por mes.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta Visual Expositiva (Derecha) -->
+            <div class="relative p-8 rounded-2xl border border-gray-800 bg-cyberCard shadow-neon-purple overflow-hidden">
+                <div class="space-y-4">
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Vista de la interfaz</div>
+                    
+                    <!-- Simulación de la barra real de la app -->
+                    <div class="flex flex-wrap items-center gap-4 p-4 rounded-xl border border-gray-800 bg-cyberDark text-xs">
+                        <div class="flex items-center gap-2 pr-3 border-r border-gray-800">
+                            <span class="text-[10px] font-bold text-gray-500 uppercase tracking-wider">WR</span>
+                            <span class="font-bold text-cyberGreen text-sm" style="filter: drop-shadow(0 0 4px rgba(0, 255, 204, 0.6));">60%</span>
+                        </div>
+                        <div class="flex items-center gap-2 pr-3 border-r border-gray-800 text-xs">
+                            <span class="text-cyberGreen font-bold">3 TP</span>
+                            <span class="text-gray-700">/</span>
+                            <span class="text-gray-400 font-bold">1 BE</span>
+                            <span class="text-gray-700">/</span>
+                            <span class="text-cyberRed font-bold">1 SL</span>
+                        </div>
+                        <div class="flex items-center gap-2 pr-3 border-r border-gray-800">
+                            <span class="text-[10px] font-bold text-gray-500 uppercase tracking-wider">PF</span>
+                            <span class="font-bold text-white text-sm">5.82</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[10px] font-bold text-gray-500 uppercase tracking-wider">NET</span>
+                            <span class="font-bold text-cyberGreen text-sm" style="filter: drop-shadow(0 0 4px rgba(0, 255, 204, 0.6));">+$369.60</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-xs text-gray-500 italic text-center pt-2">
+                        *Visualización interactiva disponible en tu sección de Historial Mensual.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- 👆👆👆 FIN DEL BLOQUE NUEVO 👆👆👆 -->
+     <section id="estrategias" class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-900 bg-cyberDark/50">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            
+            <!-- Texto descriptivo (Izquierda) -->
+            <div class="space-y-6">
+                <div class="inline-block px-3 py-1 rounded-full border border-cyberPurple/30 bg-cyberPurple/5 text-xs font-bold tracking-widest text-cyberPurple uppercase">
+                    🧠 Edge Estadístico
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                    Filtra y Audita tus <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyberPurple to-cyberGreen" style="filter: drop-shadow(0 0 8px rgba(100, 108, 255, 0.4));">
+                        Estrategias de Trading
+                    </span>
+                </h2>
+                <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                    Deja de operar por impulso o corazonadas. Vincula cada entrada a un plan de trading específico directamente en tu formulario. Descubre con datos matemáticos exactos cuál de tus sistemas te da un verdadero 'Edge' y cuál te está haciendo perder dinero.
+                </p>
+                
+                <!-- Puntos clave -->
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-2">
+                        <span class="text-cyberPurple">✔</span>
+                        <span class="text-gray-400">Asignación obligatoria de estrategia (SMC, Reversiones, Breakers) antes de guardar el trade.</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-cyberPurple">✔</span>
+                        <span class="text-gray-400">Filtrado inteligente en el historial para auditar la efectividad de cada setup por separado.</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-cyberPurple">✔</span>
+                        <span class="text-gray-400">Evita el overtrading y blinda tu disciplina psicológica frente a los gráficos.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta Visual Expositiva (Derecha) -->
+            <div class="relative p-8 rounded-2xl border border-gray-800 bg-cyberCard shadow-neon-green overflow-hidden">
+                <div class="space-y-4">
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Módulo de Estrategias</div>
+                    
+                    <!-- Simulación del Selector dentro de la App -->
+                    <div class="space-y-3 p-4 rounded-xl border border-gray-800 bg-cyberDark text-xs">
+                        <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider block">Seleccionar Estrategia Activa</label>
+                        <div class="w-full p-2.5 rounded-lg bg-cyberCard border border-cyberPurple/40 text-white font-medium flex justify-between items-center">
+                            <span>⚡ SMC Scalping (1m / 5m)</span>
+                            <span class="text-[10px] bg-cyberPurple/20 text-cyberPurple border border-cyberPurple/30 px-2 py-0.5 rounded font-mono">ACTIVA</span>
+                        </div>
+                        
+                        <!-- Lista de backtesting rápido -->
+                        <div class="pt-2 space-y-1.5 opacity-60">
+                            <div class="flex justify-between items-center text-[11px] font-mono text-gray-400 border-b border-gray-900 pb-1">
+                                <span>↳ Liquidity Sweeps (EURUSD)</span>
+                                <span class="text-cyberGreen font-bold">WR: 64.2%</span>
+                            </div>
+                            <div class="flex justify-between items-center text-[11px] font-mono text-gray-400">
+                                <span>↳ Order Blocks & ChoCh (USDCAD)</span>
+                                <span class="text-cyberGreen font-bold">WR: 58.0%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-xs text-gray-500 italic text-center pt-2">
+                        *Optimiza tu ventaja estadística segmentando tus reglas operativas.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="gestion" class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-900">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white tracking-wide">Creado para el Trader Profesional</h2>
+            <p class="text-gray-400 mt-2">Lleva el control de tus payouts y separa tus fondos de manera inteligente.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-cyberCard border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition">
+                <h3 class="text-xl font-bold text-white mb-2">Retiros de Ganancias</h3>
+                <p class="text-gray-400 text-sm mb-6">Monitorea tus beneficios generados, gestiona el capital disponible para retiro y mantén la motivación registrando cada payout de tu cuenta.</p>
+                <img src="./Retiros de Ganancias.jpg" alt="Panel de Retiros" class="rounded-xl border border-gray-800 w-full h-auto">
+            </div>
+
+            <div class="bg-cyberCard border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition">
+                <h3 class="text-xl font-bold text-white mb-2">Múltiples Perfiles y Cuentas de Fondeo</h3>
+                <p class="text-gray-400 text-sm mb-6">Cambia instantáneamente entre tu capital propio y tus cuentas de empresas de fondeo (Prop Firms) manteniendo estadísticas totalmente independientes.</p>
+                <img src="./Múltiples Perfiles y Cuentas de Fondeo.jpg" alt="Perfiles y cuentas" class="rounded-xl border border-gray-800 w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <section id="precios" class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-900 text-center">
+        <h2 class="text-3xl font-bold text-white tracking-wide">Planes de Membresía</h2>
+        <p class="text-gray-400 mt-2 max-w-md mx-auto text-sm">Elige el plan que mejor se adapte a tu etapa como trader. Desbloquea tu acceso de forma inmediata.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto items-stretch">
+            
+            <div class="bg-cyberCard border border-gray-800 rounded-2xl p-8 flex flex-col justify-between text-left hover:border-gray-700 transition w-full">
+                <div>
+                    <h4 class="text-lg font-bold text-white">Prueba Gratuita</h4>
+                    <p class="text-cyberGreen text-xs mt-1">7 days of full access</p>
+                    <div class="text-3xl font-extrabold text-white mt-6">$0<span class="text-sm font-normal text-gray-500"> / 7 días</span></div>
+                    <p class="text-gray-400 text-xs mt-3 leading-relaxed">Prueba el software con tu propia operativa sin pagar nada. Convéncete del poder de las estadísticas.</p>
+                    <ul class="mt-6 space-y-3 text-xs text-gray-400">
+                        <li><span class="text-cyberGreen">✔</span> Soporte técnico</li>
+                        <li><span class="text-cyberGreen">✔</span> Métricas completas y Heatmap</li>
+                        <li><span class="text-cyberGreen">✔</span> Registro de emociones y setups</li>
+                    </ul>
+                </div>
+                <div class="mt-8">
+                    <a onclick="solicitarPlan('Periodo de Prueba Gratis de 7 días')" class="cursor-pointer block w-full bg-[#1e2640] hover:bg-[#283154] text-white font-bold text-center py-4 rounded-xl transition duration-300">
+                        Iniciar Prueba Gratis
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-cyberCard border-2 border-cyberGreen rounded-2xl p-8 flex flex-col justify-between text-left shadow-neon-green relative w-full">
+                <span class="absolute -top-3 right-6 bg-cyberGreen text-black font-extrabold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">Más Popular</span>
+                <div>
+                    <h4 class="text-lg font-bold text-white">Plan Trimestral</h4>
+                    <p class="text-gray-400 text-xs mt-1">Acceso por 3 meses</p>
+                    <div class="text-3xl font-extrabold text-white mt-6">$10<span class="text-sm font-normal text-gray-500"> / trimestre</span></div>
+                    <p class="text-gray-400 text-xs mt-3 leading-relaxed">Perfecto para respaldar un trimestre completo de backtesting y consistencia en tus cuentas.</p>
+                    <ul class="mt-6 space-y-3 text-xs text-gray-300">
+                        <li><span class="text-cyberGreen">✔</span> Todo lo de la prueba gratuita</li>
+                        <li><span class="text-cyberGreen">✔</span> Gestión multi-perfil (Prop Firms)</li>
+                        <li><span class="text-cyberGreen">✔</span> Soporte técnico</li>
+                    </ul>
+                </div>
+                <div class="mt-8">
+                    <a onclick="solicitarPlan('Plan Trimestral ($10)')" class="cursor-pointer block w-full bg-gradient-to-r from-[#00ffd5] to-[#00bfa5] text-black font-extrabold text-center py-4 rounded-xl transition duration-300 hover:opacity-90 uppercase tracking-wider">
+                        ADQUIRIR MEMBRESÍA
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-cyberCard border border-cyberPurple rounded-2xl p-8 flex flex-col justify-between text-left hover:border-cyberPurple/70 shadow-neon-purple transition relative w-full">
+                <span class="absolute -top-3 right-6 bg-cyberPurple text-white font-extrabold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">Ahorra $10</span>
+                <div>
+                    <h4 class="text-lg font-bold text-white">Plan Anual</h4>
+                    <p class="text-cyberPurple text-xs mt-1">Acceso por 12 meses</p>
+                    <div class="flex items-baseline gap-2 mt-6">
+                        <span class="text-3xl font-extrabold text-white">$30</span>
+                        <span class="text-sm line-through text-gray-500">$40</span>
+                        <span class="text-sm font-normal text-gray-500">/ año</span>
+                    </div>
+                    <p class="text-gray-400 text-xs mt-3 leading-relaxed font-semibold text-cyberGreen">¡Te ahorras $10 reales en comparación con el precio regular!</p>
+                    <ul class="mt-6 space-y-3 text-xs text-gray-400">
+                        <li><span class="text-cyberGreen">✔</span> Acceso total por 1 año entero</li>
+                        <li><span class="text-cyberGreen">✔</span> Todo lo anterior</li>
+                    </ul>
+                </div>
+                <div class="mt-8">
+                    <a onclick="solicitarPlan('Plan Anual ($30)')" class="cursor-pointer block w-full bg-[#16192b] border-2 border-[#3b3f6c] hover:border-[#5a5f9f] text-white font-bold text-center py-4 rounded-xl transition duration-300">
+                        Obtener Plan Maestro
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-12 max-w-2xl mx-auto px-4">
+            <p class="text-sm md:text-base text-gray-400 font-medium tracking-wide">
+                📌 Para iniciar tu prueba gratuita o adquirir un plan debes darle al boton y elegir tu plan.
+            </p>
+        </div>
+    </section>
+
+    <section id="caracteristicas" class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-900">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white tracking-wide">¿Por qué FX Journal Pro?</h2>
+            <p class="text-gray-400 mt-2">No es solo una hoja de cálculo, es tu ventaja estadística en el mercado.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-cyberCard/50 border border-gray-800 rounded-2xl p-6 hover:border-cyberGreen/50 transition">
+                <div class="text-cyberGreen text-3xl mb-4">🎯</div>
+                <h3 class="text-xl font-bold text-white mb-2">Optimización del Tiempo</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                   Sabemos que en los mercados financieros cada segundo cuenta. Nuestra terminal está diseñada para eliminar la fricción del registro manual tradicional; ingresa tus operaciones en segundos y deja que el software procese toda tu analítica avanzada al instante, permitiéndote concentrar toda tu energía en la ejecución de tu plan de trading.
+                </p>
+            </div>
+            <div class="bg-cyberCard/50 border border-gray-800 rounded-2xl p-6 hover:border-cyberPurple/50 transition">
+                <div class="text-cyberPurple text-3xl mb-4">💧</div>
+                <h3 class="text-xl font-bold text-white mb-2">Facil de usar</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                 Desarrollada con un enfoque centrado en el usuario, nuestra aplicación Web combina una interfaz intuitiva con una experiencia de navegación fluida, garantizando la máxima comodidad y eficiencia para el trader en sus sesiones diarias.
+                </p>
+            </div>
+            <div class="bg-cyberCard/50 border border-gray-800 rounded-2xl p-6 hover:border-cyberRed/50 transition">
+                <div class="text-cyberRed text-3xl mb-4">🔒</div>
+                <h3 class="text-xl font-bold text-white mb-2">Control Psicológico</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Audita tu psicología operativa. Identifica y corrige los patrones conductuales y emocionales que te inducen a tocar Stop Loss, permitiéndote neutralizar las rachas negativas y blindar tu disciplina ante el mercado. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-900">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white tracking-wide">Preguntas Frecuentes</h2>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-cyberCard border border-gray-800 rounded-xl p-6">
+                <h4 class="text-lg font-bold text-white">¿Tengo que vincular mis credenciales del broker?</h4>
+                <p class="text-gray-400 text-sm mt-2">Absolutamente no. FX Journal Pro funciona de manera independiente para garantizar la seguridad total de tu capital. Los registros se ingresan manualmente en segundos a través de nuestra interfaz optimizada, manteniendo tu cuenta de MetaTrader libre de accesos de terceros.</p>
+            </div>
+            <div class="bg-cyberCard border border-gray-800 rounded-xl p-6">
+                <h4 class="text-lg font-bold text-white">¿Qué pasa si opero solo uno o mas de un par?</h4>
+                <p class="text-gray-400 text-sm mt-2">La plataforma es completamente flexible y se adapta a tu enfoque operativo. Si eres un operador especializado en un solo activo, el software Web maximizará la precisión de tus estadísticas, generando mapas de calor (Heatmaps) de volatilidad horaria ultra específicos. Si manejas múltiples pares, el sistema te permitirá filtrar, comparar y segmentar el rendimiento de cada uno de ellos de forma independiente, ayudándote a identificar qué activo específico te está ofreciendo la mayor ventaja estadística.</p>
+            </div>
+            <div class="bg-cyberCard border border-gray-800 rounded-xl p-6">
+                <h4 class="text-lg font-bold text-white">¿Qué sucede al finalizar los 7 días de prueba gratis?</h4>
+                <p class="text-gray-400 text-sm mt-2">El software Web bloqueará el acceso a la plataforma, pero tus datos de trading permanecerán guardados y seguros. Para recuperar el acceso y seguir visualizando tus estadísticas, solo debes adquirir el plan Trimestral o Anual contactando a soporte.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-900 bg-cyberDark py-12 px-6 mt-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="./icon.ico" alt="FX Journal Pro Logo" class="h-8 w-8 object-contain">
+                    <span class="text-lg font-bold text-white">FX <span class="text-cyberGreen">Journal</span> Pro</span>
+                </div>
+                <p class="text-gray-500 text-xs leading-relaxed max-w-xs">
+                    Software Web de análisis estadístico y registro de operaciones diseñado para traders de alto rendimiento. Conviértete en el auditor de tu propia rentabilidad.
+                </p>
+            </div>
+
+            <div class="md:ml-auto">
+                <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Enlaces</h5>
+                <ul class="space-y-2 text-xs text-gray-500">
+                    <li><a href="#caracteristicas" class="hover:text-cyberGreen transition">Características del Software</a></li>
+                    <li><a href="#precios" class="hover:text-cyberGreen transition">Planes y Precios</a></li>
+                    <li><a href="https://wa.me/584242025919" target="_blank" class="hover:text-cyberGreen transition">Soporte por WhatsApp</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-1 bg-cyberCard/30 border border-gray-900 rounded-2xl p-6 md:ml-auto max-w-sm">
+    <h5 class="text-white font-extrabold mb-4 text-xs uppercase tracking-widest border-b border-gray-800 pb-2">
+        Términos y Condiciones de Uso
+    </h5>
+    <div class="text-[11px] text-gray-500 leading-relaxed space-y-4 max-h-[320px] overflow-y-auto pr-2 custom-scrollbar text-justify">
+        <div>
+            <p class="text-cyberGreen font-bold uppercase tracking-wider mb-1">1. Aceptación de los Términos</p>
+            <p>Al descargar, instalar o utilizar FX Journal Pro ("la Plataforma"), el usuario acepta quedar sujeto a los presentes Términos y Condiciones. Si no está de acuerdo, deberá abstenerse de utilizar la aplicación.</p>
+        </div>
+        <div>
+            <p class="text-cyberGreen font-bold uppercase tracking-wider mb-1">2. Descripción del Servicio</p>
+            <p>FX Journal Pro es un software de tipo SaaS diseñado exclusivamente para el registro analítico, auditoría estadística y seguimiento de operaciones. El usuario reconoce que el ingreso de datos en la aplicación se realiza de forma manual y bajo su propia responsabilidad.</p>
+        </div>
+        <div>
+            <p class="text-cyberGreen font-bold uppercase tracking-wider mb-1">3. Licenciamiento y Seguridad (Hardware ID)</p>
+            <p>La adquisición otorga una licencia de uso personal, privada e intransferible vinculada estrictamente al Identificador de Hardware (Hardware ID) de la PC del usuario. Queda terminantemente prohibido intentar descifrar, modificar o realizar ingeniería inversa sobre el software. Cualquier violación resultará en la revocación inmediata del acceso.</p>
+        </div>
+        <div>
+            <p class="text-cyberGreen font-bold uppercase tracking-wider mb-1">4. Activaciones y Reembolsos</p>
+            <p>La Empresa otorga un periodo de prueba gratuito de 7 días para evaluar las funciones y verificar la compatibilidad. Debido a este acceso previo y a la naturaleza digital del programa, todas las ventas de membresías comerciales (Trimestral/Anual) son definitivas y no reembolsables.</p>
+        </div>
+        <div>
+            <p class="text-cyberGreen font-bold uppercase tracking-wider mb-1">5. Exención de Responsabilidad Financiera</p>
+            <p>FX Journal Pro es estrictamente un software de soporte estadístico. Ninguna métrica constituye asesoría financiera o recomendación de inversión. El trading conlleva un alto riesgo; la Empresa no se hace responsable por pérdidas económicas, cuentas de fondeo reprobadas o decisiones operativas tomadas por el usuario.</p>
+        </div>
+        <div>
+            <p class="text-cyberGreen font-bold uppercase tracking-wider mb-1">6. Modificaciones</p>
+            <p>La Empresa se reserva el derecho de actualizar estos términos en cualquier momento para adaptarlos a nuevas actualizaciones del software. El uso continuo de la aplicación constituirá la aceptación de los nuevos términos.</p>
+        </div>
+        <!-- ⚡ NUEVA CLÁUSULA AGREGADA INTEGRALMENTE ⚡ -->
+        <div>
+            <p class="text-cyberGreen font-bold uppercase tracking-wider mb-1">7. Disponibilidad y Mantenimiento</p>
+            <p>Nos esforzamos por mantener el servicio operativo las 24 horas del día. Sin embargo, nos reservamos el derecho de realizar tareas de mantenimiento programado o actualizaciones que puedan causar interrupciones temporales. No nos hacemos responsables por la pérdida de datos o ganancias derivadas de interrupciones técnicas imprevistas fuera de nuestro control.</p>
+        </div>
+    </div>
+</div>
+    </footer>
+
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6a230ecc6d77da1c401ddd75/1jqcf3k7j';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <script type="text/javascript">
+    function solicitarPlan(nombrePlan) {
+    if (typeof Tawk_API !== 'undefined' && Tawk_API.maximize) {
+        // 1. Abrimos la ventana del chat de inmediato
+        Tawk_API.maximize();
+        
+        // 2. Creamos un bucle que lo va a intentar cada 500ms hasta lograrlo
+        var intentoEnvio = setInterval(function() {
+            try {
+                // Si la función ya existe, dispara el mensaje
+                if (typeof Tawk_API.sendMessage === 'function') {
+                    Tawk_API.sendMessage({
+                        text: "Hola, me interesa el " + nombrePlan + ". ¿Cómo puedo proceder?"
+                    });
+                    
+                    // ¡Éxito! Apagamos el bucle para que no repita el mensaje
+                    clearInterval(intentoEnvio);
+                    console.log("¡Mensaje enviado con éxito para el plan: " + nombrePlan + "!");
+                } else {
+                    console.log("Esperando que la API de Tawk.to esté lista...");
+                }
+            } catch (error) {
+                console.log("Reintentando inyección de mensaje...");
+            }
+        }, 500);
+    } else {
+        console.log("El objeto Tawk_API no se encuentra disponible todavía.");
+    }
+}
+</script>
+</body>
+</html>
